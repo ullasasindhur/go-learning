@@ -1,3 +1,3 @@
-module github.com/ullasasindhur/go-learning/blob/main/01hello
+module github.com/ullasasindhur/go-learning/tree/main/01_hello
 
 go 1.19
