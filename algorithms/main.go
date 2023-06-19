@@ -17,6 +17,7 @@ func main() {
 	sorting.Selection_Sort(getCopySlice(input))
 	sorting.Quick_Sort(getCopySlice(input))
 	sorting.Merge_Sort(getCopySlice(input))
+	sorting.Heap_Sort(getCopySlice(input))
 }
 
 func getCopySlice(input []int) []int {
