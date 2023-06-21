@@ -3,6 +3,8 @@ package linear_sorting
 import "fmt"
 
 func Count_Sort(input []int, inputRange int, inputLen int) {
+	fmt.Println("\nInput:")
+	fmt.Println(input)
 	fmt.Println("\nCount Sort: ")
 	var rangeArr []int = make([]int, inputRange)
 	for i := 0; i < inputLen; i++ {
