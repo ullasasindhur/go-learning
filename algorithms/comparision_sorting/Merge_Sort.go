@@ -1,9 +1,9 @@
-package sorting
+package comparision_sorting
 
 import "fmt"
 
 func Merge_Sort(input []int) {
-	fmt.Println("Merge Sort:")
+	fmt.Println("\nMerge Sort:")
 	var inputLen int = len(input)
 	merge(input, 0, inputLen-1)
 	fmt.Println(input)

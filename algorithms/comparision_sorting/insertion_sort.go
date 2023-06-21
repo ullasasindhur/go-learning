@@ -1,9 +1,9 @@
-package sorting
+package comparision_sorting
 
 import "fmt"
 
 func Insertion_Sort(input []int) {
-	fmt.Println("Insertion Sort: ")
+	fmt.Println("\nInsertion Sort: ")
 	var inputLen int = len(input)
 	for i := 1; i < inputLen; i++ {
 		var curVal, j int = input[i], i - 1

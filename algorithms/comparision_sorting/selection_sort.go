@@ -1,9 +1,9 @@
-package sorting
+package comparision_sorting
 
 import "fmt"
 
 func Selection_Sort(input []int) {
-	fmt.Println("Selection Sort:")
+	fmt.Println("\nSelection Sort:")
 	var inputLen int = len(input)
 	for i := 0; i < inputLen-1; i++ {
 		var min int = i

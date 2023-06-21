@@ -1,9 +1,9 @@
-package sorting
+package comparision_sorting
 
 import "fmt"
 
 func Quick_Sort(input []int) {
-	fmt.Println("Quick Sort: ")
+	fmt.Println("\nQuick Sort: ")
 	quick(input, 0, len(input)-1)
 	fmt.Println(input)
 }

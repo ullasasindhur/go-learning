@@ -1,9 +1,9 @@
-package sorting
+package comparision_sorting
 
 import "fmt"
 
 func Heap_Sort(input []int) {
-	fmt.Println("Heap Sort: ")
+	fmt.Println("\nHeap Sort: ")
 	var inputLen int = len(input)
 	for i := (inputLen / 2) - 1; i >= 0; i-- {
 		heapify(input, i, inputLen)

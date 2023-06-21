@@ -1,9 +1,9 @@
-package sorting
+package comparision_sorting
 
 import "fmt"
 
 func Bubble_Sort(input []int) {
-	fmt.Println("Bubble Sort: ")
+	fmt.Println("\nBubble Sort: ")
 	var inputLen int = len(input)
 	for i := 0; i < inputLen-1; i++ {
 		for j := 0; j < inputLen-1; j++ {
