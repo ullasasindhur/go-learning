@@ -28,6 +28,9 @@ func main() {
 	inputRange = 150
 	input = getRandomArray(input, inputLen, inputRange)
 	linear_sorting.Radix_Sort(getCopySlice(input), inputLen)
+	var inputFloat []float64 = make([]float64, inputLen)
+	inputFloat = getRandomArrayFloat(inputFloat, inputLen)
+	linear_sorting.Bucket_Sort(inputFloat, inputLen)
 }
 
 func getCopySlice(input []int) []int {
@@ -41,4 +44,11 @@ func getRandomArray(input []int, inputLen int, inputRange int) []int {
 		input[i] = rand.Intn(inputRange)
 	}
 	return input
+}
+
+func getRandomArrayFloat(inputFloat []float64, inputLen int) []float64 {
+	for i := 0; i < inputLen; i++ {
+		inputFloat[i] = rand.Float64()
+	}
+	return inputFloat
 }
