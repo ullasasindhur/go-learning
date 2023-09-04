@@ -28,18 +28,17 @@ func (c child) getDetails() string {
 	return "mother father"
 }
 
-func (c child) getFatherDetails() string {
-	c.father.name = "55"
-	return c.father.name
-}
-
 func Main() {
 	fmt.Println("Inheritance:")
 	var f = father{name: "father"}
 	var m = mother{name: "mother"}
-	var child = child{mother: m, father: f}
-	fmt.Println(child.getDetails())
-	fmt.Println(child.getFatherDetails())
-	fmt.Println(child.getMotherDetails())
-	fmt.Println(child.father.getFatherDetails())
+	var children = child{mother: m, father: f}
+	fmt.Println(children.getDetails())
+	fmt.Println(children.getFatherDetails())
+	fmt.Println(children.getMotherDetails())
+	fmt.Println("Single")
+	var single = child{mother: m}
+	fmt.Println(single.getFatherDetails())
+	fmt.Println(single.getMotherDetails())
+	fmt.Println(children.getDetails())
 }
